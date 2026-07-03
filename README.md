@@ -128,7 +128,7 @@ Full experiment descriptions in Appendix C of the paper.
   author  = {[Author Name]},
   journal = {Transactions on Machine Learning Research},
   year    = {2026},
-  url     = {https://github.com/[author]/neural-scaling-survey}
+  url     = {https://github.com/zaman208/neural-scaling-survey}
 }
 ```
 
