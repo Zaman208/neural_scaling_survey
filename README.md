@@ -58,19 +58,6 @@ All 12 figures are written to `figures/`. The script has no external data depend
 
 ---
 
-## Compiling the Paper
-
-```bash
-cd paper
-pdflatex neural_scaling_survey_tmlr.tex
-bibtex  neural_scaling_survey_tmlr
-pdflatex neural_scaling_survey_tmlr.tex
-pdflatex neural_scaling_survey_tmlr.tex
-```
-
-Requires a standard TeX Live or MiKTeX distribution with `amsmath`, `booktabs`, `mdframed`, `natbib`, and `hyperref`.
-
----
 
 ## Core Framework
 
