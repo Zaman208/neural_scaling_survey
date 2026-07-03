@@ -1,11 +1,5 @@
 # Neural Scaling Laws: A Survey, Conceptual Synthesis, and Multi-Axis Framework
 
-**Authors:** Md M. Zaman , Aamna Zaman . [Department of Computer Science and Information Systems (CSIS)]  
-**Venue:** Transactions on Machine Learning Research (TMLR), submitted  
-**Code & Figures:** this repository
-
----
-
 ## Overview
 
 This paper surveys the neural scaling law literature (2017-2026) across **eight resource axes** - parameters, training data, compute, data quality/repetition, architecture (MoE), numerical precision, multimodal/domain, RL post-training, and inference-time compute - and organises them into a single conceptual framework.
