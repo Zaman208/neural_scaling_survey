@@ -1,0 +1,30 @@
+% AUTO-GENERATED — updated from actual results
+\begin{table}[t]
+\centering\small
+\caption{Experiment B (P6): g-model fits for the Qwen2.5 model family.
+P6 predicts $\partial T^*/\partial N < 0$: larger models reach the overthinking
+threshold sooner. Only Qwen2.5-1.5B (all levels) and Qwen2.5-3B (Level~1)
+completed before the session limit; Qwen2.5-7B timed out.
+\checkmark\ = monotone-decreasing $T^*$ with $N$; \texttimes\ = not monotone.}
+\label{tab:p6-scaling}
+\begin{tabular}{llrll}
+\toprule
+Model ($N$) & Level & $T^*$ (tokens) & 95\,\% CI & P6 \\
+\midrule
+Qwen2.5-1.5B (1500\,M)
+  & Level 1 & 4066 & $[1151,\,5551]$  & \\
+  & Level 3 & 1371 & $[200,\,20000]$  & \\
+  & Level 5 & 1561 & $[1072,\,3344]$  & \\
+\midrule
+Qwen2.5-3B (3000\,M)
+  & Level 1 & 3440 & $[999,\,20000]$  & \checkmark \\
+  & Level 3 & \multicolumn{2}{c}{---} & \\
+  & Level 5 & \multicolumn{2}{c}{---} & \\
+\midrule
+Qwen2.5-7B (7000\,M)
+  & Level 1 & \multicolumn{2}{c}{no data (timeout)} & \\
+  & Level 3 & \multicolumn{2}{c}{no data (timeout)} & \\
+  & Level 5 & \multicolumn{2}{c}{no data (timeout)} & \\
+\bottomrule
+\end{tabular}
+\end{table}

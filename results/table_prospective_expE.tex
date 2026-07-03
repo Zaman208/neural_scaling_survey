@@ -1,0 +1,26 @@
+% AUTO-GENERATED — updated from actual results
+\begin{table}[t]
+\centering\small
+\caption{Experiment E: prospective prediction quality.
+g-model fitted on $T\in\{150,300,600,1200\}$ tokens only,
+then evaluated at unseen $T\in\{2400,4800,9600\}$ without refitting.
+$R^2_{\mathrm{test}}>0.8$ indicates the theory generalises beyond the training window.
+Strongly negative $R^2_{\mathrm{test}}$ values indicate the g-model predicts a
+steeper post-peak decline than observed; the model is more robust than the fit assumes.}
+\label{tab:prospective}
+\begin{tabular}{llccrr}
+\toprule
+Model & Level & $R^2_{\mathrm{train}}$ & $R^2_{\mathrm{test}}$ & MAE (pp) & $T^*$ \\
+\midrule
+Phi-3.5-mini (3.8B)
+  & Level 1 & \multicolumn{4}{c}{fit failed (flat)} \\
+  & Level 3 & 0.751 & ---      & 11.3 & 583 \\
+  & Level 5 & 0.798 & $-212.5$ & 21.3 & 681 \\
+\midrule
+Qwen2.5-3B (3.0B)
+  & Level 1 & 0.887 & $-240.3$ & 23.1 & 572 \\
+  & Level 3 & 0.992 & $-127.0$ & 17.8 & 789 \\
+  & Level 5 & \multicolumn{4}{c}{insufficient training data} \\
+\bottomrule
+\end{tabular}
+\end{table}

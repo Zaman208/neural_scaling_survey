@@ -1,0 +1,25 @@
+% AUTO-GENERATED — updated from actual results
+\begin{table}[t]
+\centering\small
+\caption{Experiment C (P5): Hurst exponent estimates.
+$\hat{H}$ fitted by OLS on $\log V_{\mathrm{ent}}$ vs.\ $\log T$;
+95\,\% CI from 600 bootstrap resamples.
+P5 predicts $H\approx 0.5$ (acceptance band $[0.35,0.65]$).
+Qwen2.5-3B Level~5 timed out before accumulating sufficient data.}
+\label{tab:hurst}
+\begin{tabular}{llcccc}
+\toprule
+Model & Level & $\hat{H}$ & 95\,\% CI (boot) & $R^2$ & P5 \\
+\midrule
+Phi-3.5-mini (3.8B)
+  & Level 1 & $\phantom{-}0.067$ & $[-0.058,\;+0.195]$ & 0.168 & \texttimes \\
+  & Level 3 & $-0.067$           & $[-0.158,\;-0.009]$ & 0.333 & \texttimes \\
+  & Level 5 & $-0.081$           & $[-0.187,\;-0.044]$ & 0.511 & \texttimes \\
+\midrule
+Qwen2.5-3B (3.0B)
+  & Level 1 & $-0.008$ & $[-0.167,\;+0.130]$ & 0.003 & \texttimes \\
+  & Level 3 & $-0.009$ & $[-0.065,\;+0.178]$ & 0.003 & \texttimes \\
+  & Level 5 & \multicolumn{3}{c}{---} & --- \\
+\bottomrule
+\end{tabular}
+\end{table}

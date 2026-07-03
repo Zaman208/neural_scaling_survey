@@ -1,0 +1,24 @@
+% AUTO-GENERATED — updated from actual results
+\begin{table}[t]
+\centering\small
+\caption{Experiment D (P3): overthinking threshold $T^*$ by weight precision
+and difficulty level (Phi-3.5-mini, 10 problems/level, 3 runs/budget).
+P3 predicts $T^*$ monotone-decreasing from FP16 to INT4.
+``fit failed'' indicates a flat accuracy curve with no discernible peak.}
+\label{tab:precision-extended}
+\begin{tabular}{lrrrrl}
+\toprule
+Level & FP16 & BF16 & INT8 & INT4 & P3 \\
+\midrule
+Level 1 (easy)   & ---   & ---  & 1564  & 16000 & \texttimes \\
+Level 3 (medium) & ---   & ---  & 300   & ---   & \texttimes \\
+Level 5 (hard)   & 2394  & 1117 & 7142  & 2832  & \texttimes \\
+\bottomrule
+\end{tabular}
+\smallskip
+
+\noindent
+\textit{Note:} Level~5 shows FP16$\to$BF16 decrease (2394$\to$1117,
+consistent with P3) but INT8 reverses the trend (7142), breaking monotonicity.
+FP16/BF16 fits failed for Level~1 and Level~3 (accuracy constant across budgets).
+\end{table}

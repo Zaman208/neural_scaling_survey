@@ -1,0 +1,29 @@
+% AUTO-GENERATED — updated from actual results
+\begin{table}[t]
+\centering\small
+\caption{Experiment A: g-model fits per model and difficulty level.
+$T^*$ = fitted overthinking threshold (tokens); Peak = fitted peak accuracy (\%);
+P1 = $T^*$ monotone-increasing with difficulty (\checkmark) or not (\texttimes).
+Gemma-2-2B timed out before producing any fits.}
+\label{tab:multimodel}
+\begin{tabular}{llrllcc}
+\toprule
+Model & Level & $T^*$ & 95\,\% CI & Peak (\%) & $R^2$ & P1 \\
+\midrule
+Phi-3.5-mini (3.8B)
+  & Level 1 & \multicolumn{4}{c}{fit failed (flat curve)} & \\
+  & Level 3 & 1233 & $[523,\,12000]$ & 88.6 & 0.560 & \\
+  & Level 5 & 1617 & $[664,\,12000]$ & 89.2 & 0.805 & \texttimes \\
+\midrule
+Qwen2.5-3B (3.0B)
+  & Level 1 & 3239 & $[439,\,12000]$  & 100.1 & 0.251 & \\
+  & Level 3 &  914 & $[593,\,12000]$  & 101.0 & 0.830 & \\
+  & Level 5 & 1414 & $[150,\,3327]$   &  90.8 & 0.904 & \texttimes \\
+\midrule
+Gemma-2-2B (2.0B)
+  & Level 1 & \multicolumn{4}{c}{no data (session timeout)} & \\
+  & Level 3 & \multicolumn{4}{c}{no data (session timeout)} & \\
+  & Level 5 & \multicolumn{4}{c}{no data (session timeout)} & \texttimes \\
+\bottomrule
+\end{tabular}
+\end{table}
